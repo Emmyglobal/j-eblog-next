@@ -1,0 +1,5 @@
+# Ignore local tools and conversion scripts
+scripts/
+original_html/
+*.log
+node_modules/
