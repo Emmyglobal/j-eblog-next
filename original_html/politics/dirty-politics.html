@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Dirty Game of Nigerian Politics – Truths You Must Know | Orbittech Blog</title>
+  <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+  <meta name="description" content="Explore the hidden truths behind Nigerian politics. Why are good people often locked out of power? Discover why the system rewards corruption and greed.">
+  <meta name="keywords" content="Nigerian Politics, Dirty Politics, Corruption in Nigeria, Political Truths, Orbittech Blog, Ufuoma Bernard, 2025 Nigeria">
+  <meta name="author" content="Orbittech Blog">
+
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="The Dirty Game of Nigerian Politics – Truths You Must Know" />
+  <meta property="og:description" content="Nigerian politics is not for saints. Read why the political structure is built to punish integrity and promote corruption." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1588666309992-36684df41247?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:url" content="https://j-eblog.vercel.app/blog/dirty-politics.html" />
+  <meta property="og:type" content="article" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Dirty Game of Nigerian Politics – Truths You Must Know">
+  <meta name="twitter:description" content="Explore why politics in Nigeria is not a gentleman’s game. A breakdown of truths, deception, and the reality of leadership." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1588666309992-36684df41247?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <main class="max-w-4xl mx-auto px-6 py-16">
+    <article class="bg-white shadow-lg rounded-xl p-8">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 heading-font text-emerald-700">The Dirty Game of Nigerian Politics – A System That Rewards the Ruthless</h1>
+      <div class="flex items-center text-sm text-gray-500 mb-6">
+        <span>By Orbittech Blog</span><span class="mx-2">•</span><span>July 14, 2025</span>
+      </div>
+      <img src="https://images.unsplash.com/photo-1588666309992-36684df41247?auto=format&fit=crop&w=1200&q=80" alt="Corrupt Politics in Nigeria" class="w-full h-64 object-cover rounded-lg mb-6">
+
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <p><em>"Power tends to corrupt, and absolute power corrupts absolutely."</em></p>
+        
+        <p>
+          In Nigeria, that quote isn’t just poetic—it’s real. Ufuoma Bernard recently called Nigerian politics a dirty game, and few Nigerians could disagree. It’s a place where integrity is punished, and ruthlessness is rewarded.
+        </p>
+
+        <h2>Why Is the System Broken?</h2>
+        <p>
+          Because the structure itself discourages honesty. To win elections, politicians often rely on ballot-snatching, bribery, lies, violence, and godfathers. By the time an “honest man” makes it to the top, he’s either compromised—or he’s been silenced.
+        </p>
+
+        <h2>The Promise and the Betrayal</h2>
+        <p>
+          Buhari once symbolized hope. He promised to scrap the First Lady's office, fly commercial, remove fuel subsidies, and end medical tourism. None of these promises were kept. Nigerians were left heartbroken.
+        </p>
+
+        <h2>Can Good People Survive Politics?</h2>
+        <p>
+          Many believe they can. But the reality is: if you don’t play dirty, the system blocks your path. In 2023, some Labour Party candidates switched sides immediately after winning elections. Loyalty means nothing. Stomach infrastructure is everything.
+        </p>
+
+        <h2>Conclusion: Should We Lose Hope?</h2>
+        <p>
+          No. But we must face the truth. Nigerian politics isn’t built for saints. It’s a battlefield of betrayal, a theatre of greed. If the system doesn’t change, neither will the outcome.
+        </p>
+
+        <p class="text-emerald-700 font-semibold">So the question is: <em>Do you still want to run for office?</em></p>
+      </div>
+
+      <div class="mt-10 text-sm text-gray-500">
+        <p><strong>Share your thoughts below.</strong> Do you agree with Ufuoma Bernard?</p>
+      </div>
+    </article>
+    <!-- Comment Section -->
+<section class="mt-16 bg-gray-50 p-8 rounded-xl shadow-md">
+  <h3 class="text-2xl font-bold mb-6 heading-font text-emerald-700">Leave a Comment</h3>
+
+  <!-- Comment Form -->
+  <form id="commentForm" class="space-y-4">
+    <div>
+      <label class="block text-sm font-medium text-gray-700">Name</label>
+      <input type="text" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500">
+    </div>
+    <div>
+      <label class="block text-sm font-medium text-gray-700">Comment</label>
+      <textarea id="message" required rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+    </div>
+    <button type="submit" class="bg-emerald-600 text-white px-6 py-2 rounded hover:bg-emerald-700 transition">Submit</button>
+  </form>
+
+  <!-- Comments Display -->
+  <div id="commentList" class="mt-10 space-y-6">
+    <h4 class="text-lg font-semibold text-gray-800">Recent Comments</h4>
+    <!-- Comments will be appended here -->
+  </div>
+</section>
+
+  </main>
+
+<script>
+  const form = document.getElementById('commentForm');
+  const commentList = document.getElementById('commentList');
+
+  // Load from localStorage (you can replace with backend fetch)
+  window.addEventListener('DOMContentLoaded', () => {
+    const savedComments = JSON.parse(localStorage.getItem('comments') || '[]');
+    savedComments.forEach(addCommentToDOM);
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const message = document.getElementById('message').value.trim();
+    if (!name || !message) return;
+
+    const comment = { name, message, time: new Date().toLocaleString() };
+
+    // Save to localStorage (replace with POST to backend in real app)
+    const existing = JSON.parse(localStorage.getItem('comments') || '[]');
+    existing.push(comment);
+    localStorage.setItem('comments', JSON.stringify(existing));
+
+    addCommentToDOM(comment);
+    form.reset();
+  });
+
+  function addCommentToDOM(comment) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'bg-white p-4 rounded shadow text-sm';
+
+    wrapper.innerHTML = `
+      <p class="font-semibold text-emerald-600">${comment.name} <span class="text-xs text-gray-400">(${comment.time})</span></p>
+      <p class="text-gray-700 mt-1">${comment.message}</p>
+    `;
+    commentList.appendChild(wrapper);
+  }
+</script>
+
+</body>
+</html>

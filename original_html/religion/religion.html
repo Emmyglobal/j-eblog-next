@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Religion Articles | Orbittech Blog</title>
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+    <meta name="description" content="Thought-provoking analysis on faith, spirituality, and religious traditions. Explore our latest articles on religion at Orbittech Blog.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .heading-font { font-family: 'Playfair Display', serif; }
+        .hero-bg-religion {
+            background: linear-gradient(rgba(16, 185, 129, 0.85), rgba(16, 185, 129, 0.85)),
+                url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        :root {
+            --emerald: #50C878;
+            --gold: #FFD700;
+            --charcoal: #333333;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .blog-card:hover .blog-title {
+            color: var(--emerald);
+        }
+        
+        .nav-link:hover {
+            color: var(--emerald);
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        .newsletter-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--emerald);
+        }
+    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8604DGR3T"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-J8604DGR3T');
+    </script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-emerald-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="../index.html" class="flex items-center">
+                <div class="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center mr-2">
+                    <i class="fas fa-atom text-white text-xl"></i>
+                </div>
+                <span class="heading-font text-2xl font-bold text-emerald-700">Orbittech</span>
+            </a>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="../index.html#home" class="font-medium hover:text-emerald-600 transition">Home</a>
+                <a href="../index.html#blog" class="font-medium hover:text-emerald-600 transition">Blog</a>
+                <a href="../index.html#about" class="font-medium hover:text-emerald-600 transition">About</a>
+                <a href="../index.html#contact" class="font-medium hover:text-emerald-600 transition">Contact</a>
+            </nav>
+            <!-- Hamburger -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Nav -->
+        <nav id="mobile-menu" class="md:hidden bg-white border-t border-emerald-100 px-4 py-2 hidden">
+            <a href="../index.html#home" class="block py-2 font-medium hover:text-emerald-600">Home</a>
+            <a href="../index.html#blog" class="block py-2 font-medium hover:text-emerald-600">Blog</a>
+            <a href="../index.html#about" class="block py-2 font-medium hover:text-emerald-600">About</a>
+            <a href="../index.html#contact" class="block py-2 font-medium hover:text-emerald-600">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg-religion min-h-[300px] flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-emerald-700/70 via-emerald-500/60 to-emerald-400/40"></div>
+        <div class="container mx-auto px-4 py-16 text-white text-center relative z-10">
+            <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Religion Articles</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto drop-shadow">
+                Thought-provoking analysis on faith, spirituality, and religious traditions. Explore our latest articles and insights on religion.
+            </p>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <main class="container mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Article 1: Thanksgiving in Psalms (Featured) -->
+            <article class="bg-white rounded-xl shadow-2xl border-2 border-emerald-500 p-8 flex flex-col relative transition hover:scale-[1.02] hover:shadow-emerald-200 duration-200">
+                <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow heading-font">Featured</span>
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=80" alt="Thanksgiving in Psalms" class="rounded-lg mb-6 h-48 w-full object-cover">
+                <h2 class="text-2xl md:text-3xl font-bold mb-2 heading-font text-emerald-700">The Beauty of Thanksgiving: Lessons from Psalms</h2>
+                <div class="flex flex-wrap items-center text-sm text-gray-500 mb-4 gap-2">
+                    <span class="font-semibold text-emerald-600">Religion</span>
+                    <span class="mx-2 hidden md:inline">•</span>
+                    <span>July 12, 2025</span>
+                </div>
+                <blockquote class="italic text-emerald-600 mb-4 bg-emerald-50 rounded px-4 py-2 border-l-4 border-emerald-400">
+                    Psalms 92:1<br>
+                    "How good it is to give thanks to you, O Lord, to sing in your honour, O Most High God."
+                </blockquote>
+                <p class="mb-4 flex-grow text-gray-700 leading-relaxed">
+                    If you study the book of Psalms very closely, you will discover that more than seventy percent of the contents are on prayers for help, protection and defence.<br><br>
+                    This evidences the fact that King David, one of the prominent authors of this Bible book, did not find life all rosy; yet, he saw the beauty in thanksgiving to God.<br><br>
+                    Let us learn from David today.<br><br>
+                    If you still have the breath of life, quit complaining and give thanks.
+                </p>
+                <span class="text-gray-400 text-xs mt-auto">By Orbittech Blog</span>
+            </article>
+            <!-- Article 2 -->
+            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col transition hover:scale-[1.02] hover:shadow-emerald-200 duration-200">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Faith in Modern Society" class="rounded-lg mb-6 h-48 w-full object-cover">
+                <h2 class="text-2xl font-bold mb-2 heading-font text-emerald-700">The Role of Faith in Modern Society</h2>
+                <div class="flex items-center text-sm text-gray-500 mb-4 gap-2">
+                    <span>Religion</span>
+                    <span class="mx-2">•</span>
+                    <span>June 10, 2025</span>
+                </div>
+                <p class="mb-4 flex-grow text-gray-700">
+                    Faith continues to shape values, ethics, and community life in the 21st century. This article explores how religious beliefs influence social norms and personal decisions in a rapidly changing world.
+                </p>
+                <a href="#" class="text-emerald-600 hover:underline flex items-center font-medium mt-auto">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </article>
+            <!-- Article 3 -->
+            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col transition hover:scale-[1.02] hover:shadow-emerald-200 duration-200">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Interfaith Dialogue" class="rounded-lg mb-6 h-48 w-full object-cover">
+                <h2 class="text-2xl font-bold mb-2 heading-font text-emerald-700">Understanding Interfaith Dialogue</h2>
+                <div class="flex items-center text-sm text-gray-500 mb-4 gap-2">
+                    <span>Religion</span>
+                    <span class="mx-2">•</span>
+                    <span>May 28, 2025</span>
+                </div>
+                <p class="mb-4 flex-grow text-gray-700">
+                    Interfaith dialogue promotes peace and understanding among different religious communities. Learn about its importance and how it can bridge divides in multicultural societies.
+                </p>
+                <a href="#" class="text-emerald-600 hover:underline flex items-center font-medium mt-auto">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </article>
+            <!-- Article 4 -->
+            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col transition hover:scale-[1.02] hover:shadow-emerald-200 duration-200">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Spirituality vs Religion" class="rounded-lg mb-6 h-48 w-full object-cover">
+                <h2 class="text-2xl font-bold mb-2 heading-font text-emerald-700">Spirituality vs. Religion: What’s the Difference?</h2>
+                <div class="flex items-center text-sm text-gray-500 mb-4 gap-2">
+                    <span>Religion</span>
+                    <span class="mx-2">•</span>
+                    <span>May 15, 2025</span>
+                </div>
+                <p class="mb-4 flex-grow text-gray-700">
+                    Many people identify as spiritual but not religious. This article examines the distinctions and overlaps between spirituality and organized religion.
+                </p>
+                <a href="#" class="text-emerald-600 hover:underline flex items-center font-medium mt-auto">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </article>
+        </div>
+        <div class="mt-16 text-center">
+            <a href="../index.html#blog" class="inline-block px-6 py-3 rounded-full border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white font-medium transition">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Blog
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025 Orbittech Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

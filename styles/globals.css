@@ -1,0 +1,31 @@
+/* styles/globals.css */
+@import "tailwindcss";
+
+/* Google fonts kept in _document.js; use classes to apply them */
+:root {
+  --emerald: #50C878;
+  --gold: #FFD700;
+  --charcoal: #333333;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* heading font helper (Playfair used earlier) */
+.heading-font { font-family: 'Playfair Display', serif; }
+
+/* hero background handled inline in Hero.jsx */
+
+/* keep other small helpers from original site */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+}
+
+.blog-card:hover .blog-title { color: var(--emerald); }
+.nav-link:hover { color: var(--emerald); }
+
+/* newsletter focus */
+.newsletter-input:focus { outline: none; box-shadow: 0 0 0 2px var(--emerald); }

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relationships Articles | Orbittech Blog</title>
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+    <meta name="description" content="Insightful articles on building and maintaining healthy relationships. Explore our latest relationship advice at Orbittech Blog.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .heading-font { font-family: 'Playfair Display', serif; }
+        .hero-bg-relationships {
+            background: linear-gradient(rgba(16, 185, 129, 0.85), rgba(16, 185, 129, 0.85)),
+                url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-emerald-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="../index.html" class="flex items-center">
+                <div class="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center mr-2">
+                    <i class="fas fa-atom text-white text-xl"></i>
+                </div>
+                <span class="heading-font text-2xl font-bold text-emerald-700">Orbittech</span>
+            </a>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="../index.html#home" class="font-medium hover:text-emerald-600 transition">Home</a>
+                <a href="../index.html#blog" class="font-medium hover:text-emerald-600 transition">Blog</a>
+                <a href="../index.html#about" class="font-medium hover:text-emerald-600 transition">About</a>
+                <a href="../index.html#contact" class="font-medium hover:text-emerald-600 transition">Contact</a>
+            </nav>
+            <!-- Hamburger -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Nav -->
+        <nav id="mobile-menu" class="md:hidden bg-white border-t border-emerald-100 px-4 py-2 hidden">
+            <a href="../index.html#home" class="block py-2 font-medium hover:text-emerald-600">Home</a>
+            <a href="../index.html#blog" class="block py-2 font-medium hover:text-emerald-600">Blog</a>
+            <a href="../index.html#about" class="block py-2 font-medium hover:text-emerald-600">About</a>
+            <a href="../index.html#contact" class="block py-2 font-medium hover:text-emerald-600">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg-relationships min-h-[300px] flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-emerald-700/70 via-emerald-500/60 to-emerald-400/40"></div>
+        <div class="container mx-auto px-4 py-16 text-white text-center relative z-10">
+            <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Relationships Articles</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto drop-shadow">
+                Insightful articles on building and maintaining healthy relationships. Explore our latest relationship advice and tips for a happier life.
+            </p>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <main class="container mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Article 1 -->
+            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col transition hover:scale-[1.02] hover:shadow-emerald-200 duration-200">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Family Bonds" class="rounded-lg mb-6 h-48 w-full object-cover">
+                <h2 class="text-2xl font-bold mb-2 heading-font text-emerald-700">5 Ways to Strengthen Family Bonds</h2>
+                <div class="flex items-center text-sm text-gray-500 mb-4 gap-2">
+                    <span>Relationships</span>
+                    <span class="mx-2">•</span>
+                    <span>June 15, 2025</span>
+                </div>
+                <p class="mb-4 flex-grow text-gray-700">
+                    Explore actionable tips to improve communication and connection within your family, fostering a supportive and loving environment.
+                </p>
+                <a href="#" class="text-emerald-600 hover:underline flex items-center font-medium mt-auto">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </article>
+            <!-- Article 2 -->
+            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col transition hover:scale-[1.02] hover:shadow-emerald-200 duration-200">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Healthy Communication" class="rounded-lg mb-6 h-48 w-full object-cover">
+                <h2 class="text-2xl font-bold mb-2 heading-font text-emerald-700">Healthy Communication in Relationships</h2>
+                <div class="flex items-center text-sm text-gray-500 mb-4 gap-2">
+                    <span>Relationships</span>
+                    <span class="mx-2">•</span>
+                    <span>June 1, 2025</span>
+                </div>
+                <p class="mb-4 flex-grow text-gray-700">
+                    Communication is the foundation of any strong relationship. Learn techniques for active listening, empathy, and resolving conflicts.
+                </p>
+                <a href="#" class="text-emerald-600 hover:underline flex items-center font-medium mt-auto">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </article>
+            <!-- Article 3 -->
+            <article class="bg-white rounded-xl shadow-lg p-8 flex flex-col transition hover:scale-[1.02] hover:shadow-emerald-200 duration-200">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Work Life Balance" class="rounded-lg mb-6 h-48 w-full object-cover">
+                <h2 class="text-2xl font-bold mb-2 heading-font text-emerald-700">Balancing Work and Personal Life</h2>
+                <div class="flex items-center text-sm text-gray-500 mb-4 gap-2">
+                    <span>Relationships</span>
+                    <span class="mx-2">•</span>
+                    <span>May 20, 2025</span>
+                </div>
+                <p class="mb-4 flex-grow text-gray-700">
+                    Discover strategies to maintain healthy relationships while managing career demands and personal responsibilities.
+                </p>
+                <a href="#" class="text-emerald-600 hover:underline flex items-center font-medium mt-auto">
+                    Read More <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </article>
+        </div>
+        <div class="mt-16 text-center">
+            <a href="../index.html#blog" class="inline-block px-6 py-3 rounded-full border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white font-medium transition">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Blog
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025 Orbittech Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
