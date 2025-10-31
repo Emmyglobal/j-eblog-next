@@ -1,6 +1,7 @@
 // pages/index.jsx
 import Layout from "../components/Layout";
 import Head from "next/head";
+import Link from "next/link";
 import { getSortedPosts } from "../lib/posts";
 
 export default function Home({ posts }) {
@@ -308,7 +309,7 @@ export default function Home({ posts }) {
               <h2 className="heading-font text-3xl md:text-4xl font-bold mb-2">From Our Blog</h2>
               <p className="text-gray-600">Weekly insights on topics that matter</p>
             </div>
-            <a href="/blog/politics" className="mt-4 md:mt-0 px-6 py-3 rounded-full border border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white font-medium transition">View All Articles <i className="fas fa-arrow-right ml-2"></i></a>
+            <Link href="/blog" className="mt-4 md:mt-0 px-6 py-3 rounded-full border border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white font-medium transition">View All Articles <i className="fas fa-arrow-right ml-2"></i></Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
