@@ -7,7 +7,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
         {/* ✅ Favicon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.png" />
 
         {/* ✅ Google Fonts (optional, if used in your blog) */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
