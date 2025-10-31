@@ -6,6 +6,19 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+        {/* ✅ Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* ✅ Google Fonts (optional, if used in your blog) */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+
+        {/* ✅ Font Awesome for icons */}
+        <script
+          src="https://kit.fontawesome.com/a076d05399.js"
+          crossOrigin="anonymous"
+          async
+        ></script>
           {/* Google AdSense script (keep your client id) */}
           <script
             async
