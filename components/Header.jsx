@@ -25,7 +25,8 @@ export default function Header() {
 
         <nav className="hidden md:flex space-x-8">
           <a href="#home" className="nav-link font-medium">Home</a>
-          <a href="#services" className="nav-link font-medium">Services</a>
+          <Link href="/services" className="nav-link hover:text-emerald-600 font-medium">Services</Link>
+	  <Link href="/resources" className="nav-link hover:text-emerald-600 font-medium">Resources</Link>
           <a href="#about" className="nav-link font-medium">About</a>
           <a href="#blog" className="nav-link font-medium">Blog</a>
           <a href="#contact" className="nav-link font-medium">Contact</a>
@@ -45,7 +46,11 @@ export default function Header() {
       <div className={`mobile-menu md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-6 transition-all ${open ? "block" : "hidden"}`}>
         <div className="flex flex-col space-y-4">
           <a href="#home" className="nav-link font-medium">Home</a>
-          <a href="#services" className="nav-link font-medium">Services</a>
+          <Link href="/services" className="nav-link font-medium">Services</Link>
+	  <Link href="/resources" className="hover:text-emerald-600">
+  Resources
+</Link>
+
           <a href="#about" className="nav-link font-medium">About</a>
           <a href="#blog" className="nav-link font-medium">Blog</a>
           <a href="#contact" className="nav-link font-medium">Contact</a>

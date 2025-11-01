@@ -174,7 +174,7 @@ export default function Home({ posts }) {
                   <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center mr-3">
                     <i className="fas fa-book text-emerald-600"></i>
                   </div>
-                  <h3 className="heading-font text-xl font-bold">Premium Resources</h3>
+                  <Link href="/resources"><h3 className="heading-font text-xl font-bold">Premium Resources</h3></Link>
                 </div>
                 <p className="text-gray-600 mb-4">Exclusive e-books, worksheets, and research materials to supplement your learning journey.</p>
                 <div className="flex justify-between items-center">
@@ -182,7 +182,7 @@ export default function Home({ posts }) {
                     <span className="text-2xl font-bold text-gray-900">$29</span>
                     <span className="text-gray-500">/resource</span>
                   </div>
-                  <a href="#" className="px-4 py-2 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium transition flex items-center">
+                  <a href="/resources" className="px-4 py-2 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium transition flex items-center">
                     Browse <i className="fas fa-arrow-right ml-2"></i>
                   </a>
                 </div>
@@ -191,7 +191,7 @@ export default function Home({ posts }) {
           </div>
 
           <div className="text-center mt-12">
-            <a href="#" className="inline-block px-6 py-3 rounded-full border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white font-medium transition">
+            <a href="/services" className="inline-block px-6 py-3 rounded-full border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white font-medium transition">
               View All Services <i className="fas fa-arrow-right ml-2"></i>
             </a>
           </div>
@@ -545,7 +545,7 @@ export default function Home({ posts }) {
             </div>
 
             <div>
-              <h3 className="heading-font text-lg font-bold mb-6">Services</h3>
+              <Link href="/services"><h3 className="heading-font text-lg font-bold mb-6">Services</h3></Link>
               <ul className="space-y-3 text-gray-400">
                 <li>Online Classes</li>
                 <li>Consulting</li>
