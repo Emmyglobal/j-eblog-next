@@ -394,88 +394,119 @@ export default function Home({ posts }) {
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section id="contact" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <span className="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-600 font-medium mb-4">Get In Touch</span>
-            <h2 className="heading-font text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
-            <p className="max-w-2xl mx-auto text-gray-600">Have questions or want to learn more? Reach out to our team.</p>
-          </div>
+	  {/* CONTACT */}
+<section id="contact" className="py-16 bg-white">
+  <div className="container mx-auto px-4">
+    {/* Heading */}
+    <div className="text-center mb-12">
+      <span className="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-600 font-medium mb-4">
+        Get In Touch
+      </span>
+      <h2 className="heading-font text-3xl md:text-4xl font-bold mb-4">
+        Contact Us
+      </h2>
+      <p className="max-w-2xl mx-auto text-gray-600">
+        Have questions or want to learn more? Reach out to our team.
+      </p>
+    </div>
 
-	  <ContactForm />
+    {/* Main Content (Form + Info) */}
+    <div className="grid lg:grid-cols-2 gap-10 items-start">
+      {/* Left Column: Form */}
+      <div className="bg-gray-50 rounded-xl p-8 shadow-lg">
+        <ContactForm />
+      </div>
 
+      {/* Right Column: Contact Info */}
+      <div className="bg-gray-50 rounded-xl p-8 shadow-inner">
+        <h3 className="heading-font text-xl font-bold mb-6">
+          Contact Information
+        </h3>
 
-            <div className="lg:w-1/2">
-              <div className="h-full bg-gray-50 rounded-xl p-8 shadow-inner">
-                <h3 className="heading-font text-xl font-bold mb-6">Contact Information</h3>
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center mr-4 mt-1">
-                      <i className="fas fa-map-marker-alt text-emerald-600"></i>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg mb-1">Our Headquarters</h4>
-                      <p className="text-gray-600">123 Knowledge Avenue, Lagos, Nigeria</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center mr-4 mt-1">
-                      <i className="fas fa-envelope text-emerald-600"></i>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg mb-1">Email Us</h4>
-                      <p className="text-gray-600">hello@orbittechblog.com</p>
-                      <p className="text-gray-600">support@orbittechblog.com</p>
-                      <p className="text-gray-600">nwaforugochukwu21@gmail.com</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center mr-4 mt-1">
-                      <i className="fas fa-phone-alt text-emerald-600"></i>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg mb-1">Call Us</h4>
-                      <p className="text-gray-600">+234 814 637 9353 (Office)</p>
-                      <p className="text-gray-600">+234 902 324 1785 (Support)</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center mr-4 mt-1">
-                      <i className="fas fa-clock text-emerald-600"></i>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg mb-1">Working Hours</h4>
-                      <p className="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                      <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-8">
-                  <h4 className="font-bold text-lg mb-4">Connect With Us</h4>
-                  <div className="flex space-x-4">
-                    <a href="https://www.linkedin.com/in/nwafor-ugochukwu-54626b142/" className="w-10 h-10 rounded-full bg-gray-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://x.com/TechHub_OC" className="w-10 h-10 rounded-full bg-gray-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://x.com/TechHub_OC" className="w-10 h-10 rounded-full bg-gray-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://wa.me/+2347031992338" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition">
-                      <i className="fab fa-whatsapp"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+        <div className="space-y-6">
+          <div className="flex items-start">
+            <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center mr-4 mt-1">
+              <i className="fas fa-map-marker-alt text-emerald-600"></i>
+            </div>
+            <div>
+              <h4 className="font-bold text-lg mb-1">Our Headquarters</h4>
+              <p className="text-gray-600">123 Knowledge Avenue, Lagos, Nigeria</p>
             </div>
           </div>
-      </section>
+
+          <div className="flex items-start">
+            <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center mr-4 mt-1">
+              <i className="fas fa-envelope text-emerald-600"></i>
+            </div>
+            <div>
+              <h4 className="font-bold text-lg mb-1">Email Us</h4>
+              <p className="text-gray-600">hello@orbittechblog.com</p>
+              <p className="text-gray-600">support@orbittechblog.com</p>
+              <p className="text-gray-600">nwaforugochukwu21@gmail.com</p>
+            </div>
+          </div>
+
+          <div className="flex items-start">
+            <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center mr-4 mt-1">
+              <i className="fas fa-phone-alt text-emerald-600"></i>
+            </div>
+            <div>
+              <h4 className="font-bold text-lg mb-1">Call Us</h4>
+              <p className="text-gray-600">+234 814 637 9353 (Office)</p>
+              <p className="text-gray-600">+234 902 324 1785 (Support)</p>
+            </div>
+          </div>
+
+          <div className="flex items-start">
+            <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center mr-4 mt-1">
+              <i className="fas fa-clock text-emerald-600"></i>
+            </div>
+            <div>
+              <h4 className="font-bold text-lg mb-1">Working Hours</h4>
+              <p className="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
+              <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Social Links */}
+        <div className="mt-8">
+          <h4 className="font-bold text-lg mb-4">Connect With Us</h4>
+          <div className="flex space-x-4">
+            <a
+              href="https://www.linkedin.com/in/nwafor-ugochukwu-54626b142/"
+              className="w-10 h-10 rounded-full bg-gray-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://x.com/TechHub_OC"
+              className="w-10 h-10 rounded-full bg-gray-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"
+            >
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://x.com/TechHub_OC"
+              className="w-10 h-10 rounded-full bg-gray-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://wa.me/+2347031992338"
+              target="_blank"
+              rel="noreferrer"
+              className="w-10 h-10 rounded-full bg-gray-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"
+            >
+              <i className="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* MAP */}
       <div className="h-96 w-full bg-gray-200">
