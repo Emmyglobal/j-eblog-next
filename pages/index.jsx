@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import Head from "next/head";
 import Link from "next/link";
 import { getSortedPosts } from "../lib/posts";
+import ContactForm from "../components/ContactForm";
 
 export default function Home({ posts }) {
   return (
@@ -402,33 +403,8 @@ export default function Home({ posts }) {
             <p className="max-w-2xl mx-auto text-gray-600">Have questions or want to learn more? Reach out to our team.</p>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-12">
-            <div className="lg:w-1/2">
-              <div className="bg-gray-50 rounded-xl p-8 shadow-inner">
-                <h3 className="heading-font text-xl font-bold mb-6">Send Us a Message</h3>
-                <form>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Name</label>
-                      <input id="name" type="text" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emerald-500 focus:outline-none" />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email</label>
-                      <input id="email" type="email" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emerald-500 focus:outline-none" />
-                    </div>
-                  </div>
-                  <div className="mb-6">
-                    <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">Subject</label>
-                    <input id="subject" type="text" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emerald-500 focus:outline-none" />
-                  </div>
-                  <div className="mb-6">
-                    <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Message</label>
-                    <textarea id="message" rows="5" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-emerald-500 focus:outline-none"></textarea>
-                  </div>
-                  <button type="submit" className="w-full px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium transition">Send Message</button>
-                </form>
-              </div>
-            </div>
+	  <ContactForm />
+
 
             <div className="lg:w-1/2">
               <div className="h-full bg-gray-50 rounded-xl p-8 shadow-inner">
@@ -499,7 +475,6 @@ export default function Home({ posts }) {
               </div>
             </div>
           </div>
-        </div>
       </section>
 
       {/* MAP */}
