@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "nwaforugochukwu21@gmail.com",
+        user: "nwaforugochukwu92@gmail.com",
         pass: process.env.GMAIL_APP_PASSWORD, // Use App Password, not your main password
       },
     });
@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     // Send email notification to you
     await transporter.sendMail({
       from: email,
-      to: "nwaforugochukwu21@gmail.com",
+      to: "nwaforugochukwu92@gmail.com",
       subject: "New Newsletter Subscription",
       text: `You have a new subscriber: ${email}`,
     });
