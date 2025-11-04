@@ -377,22 +377,60 @@ export default function Home({ posts }) {
         </div>
       </section>
 
-      {/* NEWSLETTER */}
-      <section className="py-16 bg-gray-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="heading-font text-3xl md:text-4xl font-bold mb-6">Stay Updated With Our Latest Content</h2>
-            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">Subscribe to our newsletter and get weekly insights, exclusive offers, and early access to new courses.</p>
+{/* NEWSLETTER */}
+<section className="py-16 bg-gray-900 text-white">
+  <div className="container mx-auto px-4">
+    <div className="max-w-3xl mx-auto text-center">
+      <h2 className="heading-font text-3xl md:text-4xl font-bold mb-6">
+        Stay Updated With Our Latest Content
+      </h2>
+      <p className="text-gray-300 mb-8">
+        Subscribe to our newsletter and get weekly insights, exclusive offers, and early access to new courses.
+      </p>
 
-            <form className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-              <input type="email" placeholder="Your email address" className="newsletter-input flex-grow px-4 py-3 rounded-full bg-gray-800 border border-gray-700 focus:border-emerald-500 text-white placeholder-gray-400" />
-              <button type="submit" className="px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium transition whitespace-nowrap">Subscribe Now</button>
-            </form>
+      <form
+        onSubmit={async (e) => {
+          e.preventDefault();
+          const email = e.target.email.value.trim();
+          if (!email) return alert("Please enter a valid email.");
 
-            <p className="text-gray-400 text-sm mt-4">We respect your privacy. Unsubscribe at any time.</p>
-          </div>
-        </div>
-      </section>
+          const res = await fetch("/api/subscribe", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email }),
+          });
+
+          if (res.ok) {
+            alert("✅ Subscription successful! Check your inbox for confirmation.");
+            e.target.reset();
+          } else {
+            alert("❌ Something went wrong. Please try again later.");
+          }
+        }}
+        className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto"
+      >
+        <input
+          type="email"
+          name="email"
+          placeholder="Your email address"
+          required
+          className="flex-grow px-4 py-3 rounded-full bg-gray-800 border border-gray-700 focus:border-emerald-500 text-white placeholder-gray-400"
+        />
+        <button
+          type="submit"
+          className="px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium transition whitespace-nowrap"
+        >
+          Subscribe Now
+        </button>
+      </form>
+
+      <p className="text-gray-400 text-sm mt-4">
+        We respect your privacy. Unsubscribe at any time.
+      </p>
+    </div>
+  </div>
+</section>
+
 
 	  {/* CONTACT */}
 <section id="contact" className="py-16 bg-white">
