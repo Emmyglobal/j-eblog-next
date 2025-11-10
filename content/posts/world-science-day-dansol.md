@@ -1,10 +1,4 @@
-"use client";
-
-import React from "react";
-import ReactMarkdown from "react-markdown";
-import CommentSection from "../../components/CommentSection";
-
-const content = `---
+---
 title: "Celebrating World Science Day at Dansol Schools"
 date: "2025-11-10"
 author: "Dansol Schools"
@@ -19,7 +13,7 @@ Today, Dansol Schools proudly joins the global community in marking **World Scie
 
 At Dansol, we believe that science is one of God’s greatest gifts to humanity — a pathway to understanding His creation and improving life on earth. True to our mission of combining **academic excellence with godly values**, we nurture students who use scientific knowledge responsibly, with integrity, and for the common good.
 
-> “Science helps us understand God’s creation, but wisdom helps us use that knowledge for good.”
+> “Science helps us understand God’s creation, but wisdom helps us use that knowledge for good.”  
 > — Mrs. Adunola Akinyemiju, Founder, Dansol Schools
 
 ---
@@ -66,33 +60,10 @@ As we celebrate **World Science Day**, we remind our students that science is mo
 By applying their knowledge with humility and responsibility, Dansol students are building the foundation for a future where science promotes harmony, development, and peace.
 
 We are confident that the next great inventors, researchers, and changemakers will emerge from classrooms where curiosity meets faith — from **Dansol Schools**.
-`;
 
-export default function BlogPostPage({ frontmatter, slug }) {
-  return (
-    <article className="prose prose-lg lg:prose-xl mx-auto py-12 px-4 font-[Inter]">
-      {/* Markdown content */}
-      <ReactMarkdown>{content}</ReactMarkdown>
+---
 
-      {/* ✅ Google AdSense Block */}
-      <div className="mt-16 text-center">
-        <ins
-          className="adsbygoogle"
-          style={{ display: "block" }}
-          data-ad-client="ca-pub-8061135224509487"
-          data-ad-slot="5161174753"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        />
-      </div>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
-        }}
-      />
+**Happy World Science Day! 🌍🔬**
 
-      {/* 💬 Comments Section */}
-      <CommentSection postId={slug} />
-    </article>
-  );
-}
+#WorldScienceDay #DansolSchools #STEM #FaithAndInnovation #ExcellenceAndGodliness #ScienceForPeace #EducationForImpact
+
