@@ -8,8 +8,6 @@ slug: "world-science-day-dansol"
 
 <section class="prose lg:prose-xl max-w-none">
 
-![World Science Day](/blog/world-science-day-cover.jpg)
-
 ## 🔬 Celebrating World Science Day at Dansol Schools
 **Theme: Building Trust in Science**
 
