@@ -68,23 +68,23 @@ By applying their knowledge with humility and responsibility, Dansol students ar
 
 We are confident that the next great inventors, researchers, and changemakers will emerge from classrooms where curiosity meets faith — from **Dansol Schools**.
 
----
+{/* ✅ Google Ad Block (same as home page) */}
+<div className="mt-16 text-center">
+  <ins
+    className="adsbygoogle"
+    style={{ display: "block" }}
+    data-ad-client="ca-pub-8061135224509487"
+    data-ad-slot="5161174753"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+    }}
+  />
+</div>
 
-## 🌟 Google AdSense Section  
-
-<ins
-  class="adsbygoogle"
-  style="display:block; text-align:center;"
-  data-ad-layout="in-article"
-  data-ad-format="fluid"
-  data-ad-client="ca-pub-1234567890123456"
-  data-ad-slot="9876543210"
-></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
----
 
 ## 💬 Comments  
 
