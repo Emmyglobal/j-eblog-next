@@ -3,8 +3,7 @@ import { useRouter } from "next/router";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import ReactMarkdown from "react-markdown";
-import CommentSection from "@/components/CommentSection";
+import CommentSection from "../components/CommentSection";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join("content"));
