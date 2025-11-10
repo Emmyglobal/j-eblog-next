@@ -1,12 +1,16 @@
----
+"use client";
+
+import React from "react";
+import ReactMarkdown from "react-markdown";
+import CommentSection from "../../components/CommentSection";
+
+const content = `---
 title: "Celebrating World Science Day at Dansol Schools"
 date: "2025-11-10"
 author: "Dansol Schools"
 image: "/blog/world-science-day-cover.jpg"
 slug: "world-science-day-dansol"
 ---
-
-<section class="prose lg:prose-xl max-w-none">
 
 ## 🔬 Celebrating World Science Day at Dansol Schools
 **Theme: Building Trust in Science**
@@ -24,18 +28,16 @@ At Dansol, we believe that science is one of God’s greatest gifts to humanity 
 
 ## 🔭 The Importance of Science in Today’s World
 
-Science is at the heart of progress. It shapes innovation, improves health, and solves problems that affect our everyday lives.
-From medicine and technology to agriculture and environmental protection, science drives the solutions that sustain our world.
+Science is at the heart of progress. It shapes innovation, improves health, and solves problems that affect our everyday lives. From medicine and technology to agriculture and environmental protection, science drives the solutions that sustain our world.
 
 By fostering curiosity and critical thinking, science helps students:
 
-- Develop problem-solving skills
-- Learn the value of evidence and truth
-- Make informed decisions about their health, environment, and communities
-- Build innovations that can change the world for good
+1. **Develop problem-solving skills**
+2. **Learn the value of evidence and truth**
+3. **Make informed decisions about their health, environment, and communities**
+4. **Build innovations that can change the world for good**
 
-At Dansol, we teach our learners that **faith and science are not in conflict** — both seek truth, though through different lenses.
-When guided by godly wisdom, science becomes a force for peace, compassion, and positive change.
+At Dansol, we teach our learners that **faith and science are not in conflict** — both seek truth, though through different lenses. When guided by godly wisdom, science becomes a force for peace, compassion, and positive change.
 
 ---
 
@@ -43,8 +45,7 @@ When guided by godly wisdom, science becomes a force for peace, compassion, and 
 
 ## 🧪 Dansol’s Contribution to Science Education
 
-Dansol Schools has consistently been a model of excellence in science education in Nigeria.
-Over the years, we have:
+Dansol Schools has consistently been a model of excellence in science education in Nigeria. Over the years, we have:
 
 - Built well-equipped science laboratories that allow students to explore physics, chemistry, and biology through hands-on experiments.
 - Organized **annual science fairs and exhibitions**, where students showcase innovative projects and research ideas addressing real-world problems.
@@ -65,27 +66,33 @@ As we celebrate **World Science Day**, we remind our students that science is mo
 By applying their knowledge with humility and responsibility, Dansol students are building the foundation for a future where science promotes harmony, development, and peace.
 
 We are confident that the next great inventors, researchers, and changemakers will emerge from classrooms where curiosity meets faith — from **Dansol Schools**.
+`;
 
-<div className="mt-16 text-center">
-  <ins
-    className="adsbygoogle"
-    style={{ display: "block" }}
-    data-ad-client="ca-pub-8061135224509487"
-    data-ad-slot="5161174753"
-    data-ad-format="auto"
-    data-full-width-responsive="true"
-  ></ins>
-  <script>{`(adsbygoogle = window.adsbygoogle || []).push({});`}</script>
-</div>
+export default function BlogPostPage({ frontmatter, slug }) {
+  return (
+    <article className="prose prose-lg lg:prose-xl mx-auto py-12 px-4 font-[Inter]">
+      {/* Markdown content */}
+      <ReactMarkdown>{content}</ReactMarkdown>
 
-## 💬 Comments
+      {/* ✅ Google AdSense Block */}
+      <div className="mt-16 text-center">
+        <ins
+          className="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-client="ca-pub-8061135224509487"
+          data-ad-slot="5161174753"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
+      </div>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+        }}
+      />
 
-<div id="comments-section"></div>
-
----
-
-**Happy World Science Day! 🌍🔬**
-
-#WorldScienceDay #DansolSchools #STEM #FaithAndInnovation #ExcellenceAndGodliness #ScienceForPeace #EducationForImpact
-</section>
-
+      {/* 💬 Comments Section */}
+      <CommentSection postId={slug} />
+    </article>
+  );
+}
