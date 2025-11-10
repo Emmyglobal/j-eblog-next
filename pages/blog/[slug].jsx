@@ -1,5 +1,6 @@
 "use client";
-import { useRouter } from "next/router";
+
+import React, { useEffect } from "react";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -8,9 +9,11 @@ import CommentSection from "../../components/CommentSection";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join("content"));
-  const paths = files.map((filename) => ({
-    params: { slug: filename.replace(".md", "") },
-  }));
+  const paths = files
+    .filter((filename) => filename.endsWith(".md"))
+    .map((filename) => ({
+      params: { slug: filename.replace(".md", "") },
+    }));
 
   return { paths, fallback: false };
 }
@@ -27,8 +30,18 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 export default function BlogPost({ frontmatter, content, slug }) {
+  // Run AdSense after client-side hydration
+  useEffect(() => {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      console.error("AdSense error:", e);
+    }
+  }, []);
+
   return (
     <article className="prose prose-lg md:prose-xl mx-auto py-12 px-4 font-[Inter]">
+      {/* Blog Title */}
       <h1 className="text-4xl font-bold mb-4 text-emerald-700">
         {frontmatter.title}
       </h1>
@@ -36,6 +49,7 @@ export default function BlogPost({ frontmatter, content, slug }) {
         {frontmatter.date} • {frontmatter.author}
       </p>
 
+      {/* Cover Image */}
       {frontmatter.image && (
         <img
           src={frontmatter.image}
@@ -44,10 +58,10 @@ export default function BlogPost({ frontmatter, content, slug }) {
         />
       )}
 
-      {/* Markdown content */}
+      {/* Markdown Content */}
       <ReactMarkdown>{content}</ReactMarkdown>
 
-      {/* ✅ Google Ad Block */}
+      {/* Google AdSense */}
       <div className="mt-16 text-center">
         <ins
           className="adsbygoogle"
@@ -56,15 +70,10 @@ export default function BlogPost({ frontmatter, content, slug }) {
           data-ad-slot="5161174753"
           data-ad-format="auto"
           data-full-width-responsive="true"
-        ></ins>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
-          }}
         />
       </div>
 
-      {/* 💬 Comments Section */}
+      {/* Comments Section */}
       <CommentSection postId={slug} />
     </article>
   );
