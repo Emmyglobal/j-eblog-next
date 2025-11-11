@@ -3,12 +3,12 @@ title: "Why We Believe in Academic Excellence & Godly Values at Dansol Schools"
 date: "2025-11-10"
 author: "Emmanuel Nwafor"
 slug: "why-we-believe-in-academic-excellence-and-godly-values"
-image: "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=1600&q=80"
+image: "https://dansolschools.com/wp-content/uploads/2024/06/Dansol-Schools-Students-in-Classroom.jpg"
 ---
 
-<section class="prose lg:prose-xl max-w-none">
+<section class="prose prose-lg md:prose-xl max-w-none text-gray-800 leading-relaxed">
 
-![Dansol Students Learning](https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1600&q=80)
+![Dansol Students Learning](https://dansolschools.com/wp-content/uploads/2024/05/Dansol-Students-Learning.jpg)
 
 As we move steadily through the academic year at **Dansol Schools**, it is fitting to reflect on the twin pillars that guide our mission: **academic excellence and godly values**.  
 These are not incidental to what we do — they define our ethos, shape our culture, and steer our students toward leadership rooted in purpose.
@@ -17,19 +17,23 @@ These are not incidental to what we do — they define our ethos, shape our cult
 
 ## 🎯 A Clear Vision
 
+![Dansol Chapel Service](https://dansolschools.com/wp-content/uploads/2024/04/Dansol-School-Chapel-Service.jpg)
+
 At the heart of our institution is the conviction that every child is distinct and endowed with tremendous potential.  
 Much like Dansol emphasises for its students, we believe that learners ought to dedicate themselves to the One who gives wisdom — acknowledging that true success encompasses more than grades.
 
-We see education as a holistic journey — one that develops the mind, the character, and the heart.
+We see education as a holistic journey — one that develops the **mind**, the **character**, and the **heart**.
 
 ---
 
 ## 📚 Academic Excellence: Not Just Aiming High, But Achieving Whole-heartedly
 
+![Dansol Science Lab](https://dansolschools.com/wp-content/uploads/2024/05/Dansol-Science-Lab.jpg)
+
 In today’s fast-moving, interconnected world, good marks alone are no longer sufficient.  
 At our school, we strive for an academic experience that is rich, meaningful and future-ready.
 
-Inspired by Dansol’s initiatives — such as the launch of a virtual school for personalised learning — we too are committed to leveraging technology, innovative pedagogy and teacher development to facilitate deeper learning.
+Inspired by Dansol’s initiatives — such as the **Dansol Virtual School** for personalised learning — we too are committed to leveraging technology, innovative pedagogy and teacher development to facilitate deeper learning.
 
 We encourage our students to be self-led learners: asking questions, reaching for understanding, engaging with ideas, and becoming creators of knowledge — not just consumers of facts.
 
@@ -38,15 +42,15 @@ Just as Dansol rewards outstanding students and teachers with prizes to encourag
 
 ---
 
-![Faith and Learning](https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1600&q=80)
-
 ## 🙏 Godly Values: The Foundation of Character and Leadership
+
+![Dansol Chapel Students](https://dansolschools.com/wp-content/uploads/2024/03/Dansol-Schools-Chapel.jpg)
 
 Academic excellence anchored in godly values creates leaders who are not merely competent, but also compassionate, ethical and purpose-driven.
 
 Our school community places high value on **integrity, respect, service, faith and resilience**.
 
-Through spiritual formation, mentorship, service opportunities and co-curricular engagements, our students learn that true success is about impact, not only about impressive scores.
+Through spiritual formation, mentorship, service opportunities and co-curricular engagements, our students learn that true success is about **impact**, not only about **scores**.
 
 ---
 
@@ -58,11 +62,13 @@ Our answer is a resounding **yes**.
 When students understand who they are, whose they are, and why they learn, the journey becomes more than preparation for exams — it becomes preparation for life.
 
 > “As we aspire for our students to know that they are distinct and need to dedicate their lives to God who can give them wisdom, and make them excel.”  
-> — Mrs. Akinyemiju
+> — *Mrs. Akinyemiju, Founder*
 
 ---
 
 ## 🌱 Our Commitment to the Future
+
+![Dansol Library](https://dansolschools.com/wp-content/uploads/2024/06/Dansol-School-Library.jpg)
 
 Looking ahead, our commitment remains steadfast:
 
@@ -108,3 +114,4 @@ Together, let us ensure that **Dansol** is not only known for high achievements,
 <div id="comments-section"></div>
 
 </section>
+

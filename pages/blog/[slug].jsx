@@ -40,7 +40,7 @@ export default function BlogPost({ frontmatter, content, slug }) {
   }, []);
 
   return (
-    <article className="prose prose-lg md:prose-xl mx-auto py-12 px-4 font-[Inter]">
+    <article className="prose prose-lg md:prose-xl mx-auto py-12 px-4 prose-img:rounded-xl prose-h2:text-emerald-700 prose-strong:text-emerald-700">
       {/* Blog Title */}
       <h1 className="text-4xl font-bold mb-4 text-emerald-700">
         {frontmatter.title}
@@ -78,4 +78,3 @@ export default function BlogPost({ frontmatter, content, slug }) {
     </article>
   );
 }
-
