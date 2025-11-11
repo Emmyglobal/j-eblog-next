@@ -23,7 +23,7 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex space-x-8">
-          <Link href="#home" className="nav-link font-medium">Home</Link>
+          <Link href="/" className="nav-link font-medium">Home</Link>
           <Link href="/services" className="nav-link hover:text-emerald-600 font-medium">Services</Link>
           <Link href="/resources" className="nav-link hover:text-emerald-600 font-medium">Resources</Link>
           <Link href="#about" className="nav-link font-medium">About</Link>
