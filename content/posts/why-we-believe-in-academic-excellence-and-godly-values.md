@@ -8,14 +8,12 @@ image: "https://dansolschools.com/wp-content/uploads/2024/06/Dansol-Schools-Stud
 
 <section class="prose prose-lg md:prose-xl max-w-none text-gray-800 leading-relaxed">
 
-![Dansol Students Learning](https://dansolschools.com/wp-content/uploads/2024/05/Dansol-Students-Learning.jpg)
-
 As we move steadily through the academic year at **Dansol Schools**, it is fitting to reflect on the twin pillars that guide our mission: **academic excellence and godly values**.  
 These are not incidental to what we do — they define our ethos, shape our culture, and steer our students toward leadership rooted in purpose.
 
 ---
 
-## 🎯 A Clear Vision
+## A Clear Vision
 
 ![Dansol Chapel Service](https://dansolschools.com/wp-content/uploads/2024/04/Dansol-School-Chapel-Service.jpg)
 
