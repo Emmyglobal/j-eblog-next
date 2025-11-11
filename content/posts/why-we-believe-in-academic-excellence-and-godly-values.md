@@ -15,7 +15,7 @@ These are not incidental to what we do — they define our ethos, shape our cult
 
 ## A Clear Vision
 
-![Dansol Chapel Service](https://dansolschools.com/wp-content/uploads/2024/04/Dansol-School-Chapel-Service.jpg)
+![Faith and Learning](https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1600&q=80)
 
 At the heart of our institution is the conviction that every child is distinct and endowed with tremendous potential.  
 Much like Dansol emphasises for its students, we believe that learners ought to dedicate themselves to the One who gives wisdom — acknowledging that true success encompasses more than grades.
@@ -24,9 +24,7 @@ We see education as a holistic journey — one that develops the **mind**, the *
 
 ---
 
-## 📚 Academic Excellence: Not Just Aiming High, But Achieving Whole-heartedly
-
-![Dansol Science Lab](https://dansolschools.com/wp-content/uploads/2024/05/Dansol-Science-Lab.jpg)
+## Academic Excellence: Not Just Aiming High, But Achieving Whole-heartedly
 
 In today’s fast-moving, interconnected world, good marks alone are no longer sufficient.  
 At our school, we strive for an academic experience that is rich, meaningful and future-ready.
@@ -40,9 +38,7 @@ Just as Dansol rewards outstanding students and teachers with prizes to encourag
 
 ---
 
-## 🙏 Godly Values: The Foundation of Character and Leadership
-
-![Dansol Chapel Students](https://dansolschools.com/wp-content/uploads/2024/03/Dansol-Schools-Chapel.jpg)
+## Godly Values: The Foundation of Character and Leadership
 
 Academic excellence anchored in godly values creates leaders who are not merely competent, but also compassionate, ethical and purpose-driven.
 
@@ -52,7 +48,7 @@ Through spiritual formation, mentorship, service opportunities and co-curricular
 
 ---
 
-## 💡 Why These Two Go Hand in Hand
+## Why These Two Go Hand in Hand
 
 We often hear the question: *Can excellence and faith coexist in education?*  
 Our answer is a resounding **yes**.
@@ -64,9 +60,7 @@ When students understand who they are, whose they are, and why they learn, the j
 
 ---
 
-## 🌱 Our Commitment to the Future
-
-![Dansol Library](https://dansolschools.com/wp-content/uploads/2024/06/Dansol-School-Library.jpg)
+## Our Commitment to the Future
 
 Looking ahead, our commitment remains steadfast:
 
@@ -76,7 +70,7 @@ Looking ahead, our commitment remains steadfast:
 
 ---
 
-## 📣 A Call to Our Community
+## A Call to Our Community
 
 To our students: **strive persistently, learn passionately, serve humbly, lead courageously.**  
 To our parents and guardians: **partner with us** — your role is vital in shaping character and supporting learning.  
@@ -88,7 +82,7 @@ Together, let us ensure that **Dansol** is not only known for high achievements,
 
 **Thank you for your continued support and belief in our vision.**
 
-🖊️ *Emmanuel Nwafor*  
+*Emmanuel Nwafor*  
 *Mathematics Tutor*  
 *10 November 2025*
 
