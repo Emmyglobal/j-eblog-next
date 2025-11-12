@@ -3,7 +3,7 @@ title: "Why We Believe in Academic Excellence & Godly Values at Dansol Schools"
 date: "2025-11-10"
 author: "Emmanuel Nwafor"
 slug: "why-we-believe-in-academic-excellence-and-godly-values"
-image: "https://dansolschools.com/wp-content/uploads/2024/06/Dansol-Schools-Students-in-Classroom.jpg"
+image: "/images/dansol4.jpg"
 ---
 
 <section class="prose prose-lg md:prose-xl max-w-none text-gray-800 leading-relaxed">
