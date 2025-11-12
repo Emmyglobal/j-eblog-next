@@ -1,9 +1,9 @@
 ---
 title: "Why We Believe in Academic Excellence & Godly Values at Dansol Schools"
-date: "2025-11-10"
+date: "2025-11-12"
 author: "Emmanuel Nwafor"
 slug: "why-we-believe-in-academic-excellence-and-godly-values"
-image: "/blog/dansol3.jpg"
+image: "/blog/world-science-day-innovation.jpg"
 ---
 
 <section class="prose prose-lg md:prose-xl max-w-none text-gray-800 leading-relaxed">
@@ -84,7 +84,7 @@ Together, let us ensure that **Dansol** is not only known for high achievements,
 
 *Emmanuel Nwafor*  
 *Mathematics Tutor*  
-*10 November 2025*
+*12 November 2025*
 
 ---
 
