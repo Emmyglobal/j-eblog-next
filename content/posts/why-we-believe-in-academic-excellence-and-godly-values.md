@@ -15,7 +15,7 @@ These are not incidental to what we do — they define our ethos, shape our cult
 
 ## A Clear Vision
 
-![Dansol Innovation Day](/blog/world-science-day-innovation.jpg)
+![Dansol Innovation Day](/blog/world-science-day-innovation1.jpg)
 
 At the heart of our institution is the conviction that every child is distinct and endowed with tremendous potential.  
 Much like Dansol emphasises for its students, we believe that learners ought to dedicate themselves to the One who gives wisdom — acknowledging that true success encompasses more than grades.
