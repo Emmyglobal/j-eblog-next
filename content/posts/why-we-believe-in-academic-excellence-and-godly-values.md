@@ -3,7 +3,7 @@ title: "Why We Believe in Academic Excellence & Godly Values at Dansol Schools"
 date: "2025-11-10"
 author: "Emmanuel Nwafor"
 slug: "why-we-believe-in-academic-excellence-and-godly-values"
-image: "/blog/dansol4.jpg"
+image: "/blog/world-science-day-innovation.jpg"
 ---
 
 <section class="prose prose-lg md:prose-xl max-w-none text-gray-800 leading-relaxed">
@@ -15,7 +15,7 @@ These are not incidental to what we do — they define our ethos, shape our cult
 
 ## A Clear Vision
 
-![Faith and Learning](/blog/dansol4.jpg)
+![Dansol Innovation Day](/blog/world-science-day-innovation.jpg)
 
 At the heart of our institution is the conviction that every child is distinct and endowed with tremendous potential.  
 Much like Dansol emphasises for its students, we believe that learners ought to dedicate themselves to the One who gives wisdom — acknowledging that true success encompasses more than grades.
