@@ -66,12 +66,17 @@ These qualities form the foundation of wholesome, godly leaders.
 ## Video Highlight From the Charity Event
 
 You can watch the full video below:
-
-<youtube id="wzPSdbGdS6A" />
-
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/wzPSdbGdS6A"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
 👉 **Watch directly on YouTube:**  
-[click here to watch on YouTube](https://youtu.be/wzPSdbGdS6A)
-[click here to watch the video](https://www.youtube.com/watch?v=wzPSdbGdS6A&t=54s)
+[youtube](https://www.youtube.com/embed/wzPSdbGdS6A)
 ---
 
 ## Building a Future Generation of Godly Leaders

@@ -1,8 +1,9 @@
+"use client";
+
 import React, { useEffect } from "react";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import VideoEmbed from "../../components/VideoEmbed";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
@@ -20,29 +21,24 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const markdownWithMeta = fs.readFileSync(
+  const markdown = fs.readFileSync(
     path.join("content", slug + ".md"),
     "utf-8"
   );
 
-  const { data: frontmatter, content } = matter(markdownWithMeta);
-
+  const { data: frontmatter, content } = matter(markdown);
   return { props: { frontmatter, slug, content } };
 }
 
 export default function BlogPost({ frontmatter, content, slug }) {
   useEffect(() => {
     try {
-      if (window.adsbygoogle) {
-        window.adsbygoogle.push({});
-      }
-    } catch (error) {
-      console.error(error);
-    }
+      if (window.adsbygoogle) window.adsbygoogle.push({});
+    } catch (error) {}
   }, []);
 
   return (
-    <article className="prose prose-lg md:prose-xl mx-auto py-12 px-4 prose-img:rounded-xl prose-h2:text-emerald-700 prose-strong:text-emerald-700">
+    <article className="prose prose-lg md:prose-xl mx-auto py-12 px-4">
 
       <h1 className="text-4xl font-bold mb-4 text-emerald-700">
         {frontmatter.title}
@@ -59,59 +55,26 @@ export default function BlogPost({ frontmatter, content, slug }) {
         />
       )}
 
-	  <ReactMarkdown
-  rehypePlugins={[rehypeRaw]}
-  remarkPlugins={[remarkGfm]}
-  skipHtml={false}
-	  components={{
-  youtube({ id }) {
-    return (
-      <iframe
-        width="100%"
-        height="400"
-        src={`https://www.youtube.com/embed/${id}`}
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
-    );
-  },
-
-  iframe({ node, ...props }) {
-    return (
-      <iframe
-        {...props}
-        style={{ width: "100%", height: "400px" }}
-        frameBorder="0"
-        allowFullScreen
-      ></iframe>
-    );
-  },
-
-  a({ href, children }) {
-    return (
-      <a href={href} className="text-blue-600 underline">
-        {children}
-      </a>
-    );
-  },
-}}
->
-  {content}
-</ReactMarkdown>
-
-
-
-      <div className="mt-16 text-center">
-        <ins
-          className="adsbygoogle"
-          style={{ display: "block" }}
-          data-ad-client="ca-pub-8061135224509487"
-          data-ad-slot="5161174753"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        />
-      </div>
+      <ReactMarkdown
+        rehypePlugins={[rehypeRaw]}
+        remarkPlugins={[remarkGfm]}
+        skipHtml={false}
+        components={{
+          iframe({ node, ...props }) {
+            return (
+              <div className="my-6 w-full aspect-video">
+                <iframe
+                  {...props}
+                  className="w-full h-full rounded-xl"
+                  allowFullScreen
+                />
+              </div>
+            );
+          }
+        }}
+      >
+        {content}
+      </ReactMarkdown>
 
       <CommentSection postId={slug} />
     </article>
