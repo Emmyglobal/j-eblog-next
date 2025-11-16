@@ -69,9 +69,9 @@ These qualities form the foundation of wholesome, godly leaders.
 
 You can watch the full video below:
 
-## Video Highlight From the Charity Event
-
 [video](https://www.youtube.com/embed/wzPSdbGdS6A?start=54)
+[![DANSOL CHARITY FUND RAISING THROUGH CAR WASH]](https://www.youtube.com/embed/wzPSdbGdS6A?start=54)
+<a href="https://www.youtube.com/embed/wzPSdbGdS6A?start=54" alt="DANSOL CHARITY FUND RAISING THROUGH CAR WASH"></a>
 
 👉 **Watch directly on YouTube:**  
 [click here to watch the video](https://www.youtube.com/watch?v=wzPSdbGdS6A&t=54s)
