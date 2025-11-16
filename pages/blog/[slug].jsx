@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect } from "react";
 import fs from "fs";
 import path from "path";
@@ -30,18 +29,19 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 export default function BlogPost({ frontmatter, content, slug }) {
-  // Run AdSense after client-side hydration
   useEffect(() => {
     try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (e) {
-      console.error("AdSense error:", e);
+      if (window.adsbygoogle) {
+        window.adsbygoogle.push({});
+      }
+    } catch (error) {
+      console.error(error);
     }
   }, []);
 
   return (
     <article className="prose prose-lg md:prose-xl mx-auto py-12 px-4 prose-img:rounded-xl prose-h2:text-emerald-700 prose-strong:text-emerald-700">
-      {/* Blog Title */}
+
       <h1 className="text-4xl font-bold mb-4 text-emerald-700">
         {frontmatter.title}
       </h1>
@@ -49,7 +49,6 @@ export default function BlogPost({ frontmatter, content, slug }) {
         {frontmatter.date} • {frontmatter.author}
       </p>
 
-      {/* Cover Image */}
       {frontmatter.image && (
         <img
           src={frontmatter.image}
@@ -58,12 +57,10 @@ export default function BlogPost({ frontmatter, content, slug }) {
         />
       )}
 
-      {/* Markdown Content */}
-      <ReactMarkdown rehypePlugins={[require("rehype-raw"), require("rehype-sanitize")]}>
-	  {content}
-	  </ReactMarkdown>
+      <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+        {content}
+      </ReactMarkdown>
 
-      {/* Google AdSense */}
       <div className="mt-16 text-center">
         <ins
           className="adsbygoogle"
@@ -75,7 +72,6 @@ export default function BlogPost({ frontmatter, content, slug }) {
         />
       </div>
 
-      {/* Comments Section */}
       <CommentSection postId={slug} />
     </article>
   );
