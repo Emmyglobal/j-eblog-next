@@ -1,6 +1,6 @@
 ---
 title: "Raising Godly Leaders Through Service: Dansol Students Hold Charity Car-Wash Fundraiser"
-date: "2025-11-12"
+date: "2025-11-15"
 author: "Emmanuel Nwafor"
 slug: "dansol-charity-car-wash"
 image: "/blog/dansol-carwash.jpg"
@@ -71,17 +71,7 @@ You can watch the full video below:
 
 ## Video Highlight From the Charity Event
 
-<div style="margin: 30px 0;">
-  <iframe 
-    width="100%" 
-    height="400" 
-    src="https://www.youtube.com/watch?v=wzPSdbGdS6A&t=54s" 
-    title="Dansol Charity Car Wash" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-  </iframe>
-</div>
+[video](https://www.youtube.com/embed/wzPSdbGdS6A?start=54)
 
 👉 **Watch directly on YouTube:**  
 [click here to watch the video](https://www.youtube.com/watch?v=wzPSdbGdS6A&t=54s)

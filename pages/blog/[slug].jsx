@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import VideoEmbed from "../../components/VideoEmbed";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
@@ -59,11 +60,19 @@ export default function BlogPost({ frontmatter, content, slug }) {
       )}
 
       <ReactMarkdown
-       	 rehypePlugins={[rehypeRaw]}
-         remarkPlugins={[remarkGfm]}
-      >
-       {content}
-     </ReactMarkdown>
+  rehypePlugins={[rehypeRaw]}
+  remarkPlugins={[remarkGfm]}
+  components={{
+    a({ href, children }) {
+      if (href.startsWith("https://www.youtube.com/embed/")) {
+        return <VideoEmbed url={href} />;
+      }
+      return <a href={href}>{children}</a>;
+    },
+  }}
+>
+  {content}
+</ReactMarkdown>
 
 
       <div className="mt-16 text-center">
