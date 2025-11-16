@@ -59,21 +59,27 @@ export default function BlogPost({ frontmatter, content, slug }) {
         />
       )}
 
-      <ReactMarkdown
+	  <ReactMarkdown
   rehypePlugins={[rehypeRaw]}
   remarkPlugins={[remarkGfm]}
-	  skipHtml={false}
+  skipHtml={false}
   components={{
+    iframe({ node, ...props }) {
+      return (
+        <iframe
+          {...props}
+          style={{ width: "100%", height: "400px", marginBottom: "2rem" }}
+        />
+      );
+    },
     a({ href, children }) {
-      if (href.startsWith("https://www.youtube.com/embed/")) {
-        return <VideoEmbed url={href} />;
-      }
-      return <a href={href}>{children}</a>;
+      return <a href={href} className="text-blue-600 underline">{children}</a>;
     },
   }}
 >
   {content}
 </ReactMarkdown>
+
 
 
       <div className="mt-16 text-center">
