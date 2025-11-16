@@ -63,19 +63,39 @@ export default function BlogPost({ frontmatter, content, slug }) {
   rehypePlugins={[rehypeRaw]}
   remarkPlugins={[remarkGfm]}
   skipHtml={false}
-  components={{
-    iframe({ node, ...props }) {
-      return (
-        <iframe
-          {...props}
-          style={{ width: "100%", height: "400px", marginBottom: "2rem" }}
-        />
-      );
-    },
-    a({ href, children }) {
-      return <a href={href} className="text-blue-600 underline">{children}</a>;
-    },
-  }}
+	  components={{
+  youtube({ id }) {
+    return (
+      <iframe
+        width="100%"
+        height="400"
+        src={`https://www.youtube.com/embed/${id}`}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    );
+  },
+
+  iframe({ node, ...props }) {
+    return (
+      <iframe
+        {...props}
+        style={{ width: "100%", height: "400px" }}
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    );
+  },
+
+  a({ href, children }) {
+    return (
+      <a href={href} className="text-blue-600 underline">
+        {children}
+      </a>
+    );
+  },
+}}
 >
   {content}
 </ReactMarkdown>

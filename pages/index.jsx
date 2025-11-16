@@ -399,33 +399,36 @@ export default function Home({ posts }) {
       </p>
 
       <form
-        onSubmit={async (e) => {
-          e.preventDefault();
-          const email = e.target.email.value.trim();
-          if (!email) return alert("Please enter a valid email.");
+  onSubmit={async (e) => {
+    e.preventDefault();
+    const email = e.target.email.value.trim();
+    if (!email) return alert("Please enter a valid email.");
 
-          const res = await fetch("/api/subscribe", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email }),
-          });
+    const res = await fetch("/api/subscribe", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    });
 
-          if (res.ok) {
-            alert("✅ Subscription successful! Check your inbox for confirmation.");
-            e.target.reset();
-          } else {
-            alert("❌ Something went wrong. Please try again later.");
-          }
-        }}
-        className="flex flex-col sm:flex-row gap-4 w-xl mx-auto"
-      >
+    if (res.ok) {
+      alert("✅ Subscription successful! Check your inbox for confirmation.");
+      e.target.reset();
+    } else {
+      alert("❌ Something went wrong. Please try again later.");
+    }
+  }}
+  className="flex flex-col sm:flex-row gap-4 max-w-xl w-full mx-auto"
+>
+
         <input
-          type="email"
-          name="email"
-          placeholder="Your email address"
-          required
-          className="flex-grow px-4 py-3 rounded-full bg-gray-800 border border-gray-700 focus:border-emerald-500 text-white placeholder-gray-400"
-        />
+  type="email"
+  name="email"
+  placeholder="Your email address"
+  required
+  className="flex-grow px-4 py-3 rounded-full bg-gray-800 border border-gray-700 
+             focus:border-emerald-500 text-white placeholder-gray-400 min-w-0"
+/>
+
         <button
           type="submit"
           className="px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium transition whitespace-nowrap"

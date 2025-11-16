@@ -67,14 +67,7 @@ These qualities form the foundation of wholesome, godly leaders.
 
 You can watch the full video below:
 
-<iframe
-  width="100%"
-  height="400"
-  src="https://www.youtube.com/embed/wzPSdbGdS6A"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-></iframe>
+<youtube id="wzPSdbGdS6A" />
 
 👉 **Watch directly on YouTube:**  
 [click here to watch on YouTube](https://youtu.be/wzPSdbGdS6A)
