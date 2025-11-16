@@ -332,7 +332,7 @@ export default function Home({ posts }) {
 
       {/* FEATURED 1 – Why We Believe in Academic Excellence */}
       <article className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-        <img src="/blog/dansol4.jpg" alt="Academic Excellence" 
+        <img src="/blog/dansol1.jpg" alt="Academic Excellence" 
         className="w-full h-56 object-cover" />
         <div className="p-6">
           <h3 className="text-2xl font-semibold text-emerald-700 mb-2">
@@ -350,7 +350,7 @@ export default function Home({ posts }) {
 
       {/* FEATURED 2 – Charity Car Wash Outreach */}
       <article className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-        <img src="/blog/charity1.jpg" alt="Dansol Charity Outreach"
+        <img src="/blog/dansol-carwash.jpg" alt="Dansol Charity Outreach"
         className="w-full h-56 object-cover" />
         <div className="p-6">
           <h3 className="text-2xl font-semibold text-emerald-700 mb-2">
