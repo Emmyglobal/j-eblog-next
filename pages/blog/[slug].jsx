@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import fs from "fs";
 import path from "path";
+import VideoEmbed from "../../components/VideoEmbed";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";

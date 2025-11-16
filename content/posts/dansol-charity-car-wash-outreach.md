@@ -6,7 +6,7 @@ slug: "dansol-charity-car-wash"
 image: "/blog/dansol-carwash.jpg"
 ---
 
-##  Raising Godly Leaders Through Service  
+##  Raising Godly Leaders Through Service
 ### Dansol Students Organize Charity Car-Wash Fundraiser
 
 Yesterday at **Dansol Schools**, the atmosphere was filled with joy, teamwork, and purpose as students engaged in a **charity fundraising event** by washing parents’ cars during the PTA meeting.
@@ -32,11 +32,11 @@ They weren’t just told what charity means…
 
 Through this project, students learned:
 
-- Humility  
-- Responsibility  
-- The dignity of honest work  
-- Team spirit  
-- Joy in serving others  
+- Humility
+- Responsibility
+- The dignity of honest work
+- Team spirit
+- Joy in serving others
 
 These are qualities that academic work alone cannot teach — but service instills deeply.
 
@@ -50,11 +50,11 @@ Dansol continues to prove that **faith and excellence are not rivals** — they 
 
 Students are encouraged not only to shine intellectually but to grow in:
 
-- Integrity  
-- Compassion  
-- Service  
-- Faith  
-- Leadership  
+- Integrity
+- Compassion
+- Service
+- Faith
+- Leadership
 
 These qualities form the foundation of wholesome, godly leaders.
 
@@ -68,7 +68,11 @@ These qualities form the foundation of wholesome, godly leaders.
 You can watch the full video below:
 
 [youtube](https://www.youtube.com/embed/wzPSdbGdS6A)
+
+👉 **Watch directly on YouTube:**  
+[click here to watch on YouTube](https://youtu.be/wzPSdbGdS6A)
 ---
+https://youtu.be/wzPSdbGdS6A?si=cYJPk2ndQba5c1KM
 
 ## Building a Future Generation of Godly Leaders
 
@@ -77,10 +81,10 @@ Dansol is not just educating minds —
 
 By pairing learning with service, the school prepares students who will:
 
-- Lead with compassion  
-- Serve with humility  
-- Build communities  
-- Transform nations  
+- Lead with compassion
+- Serve with humility
+- Build communities
+- Transform nations
 
 These are the leaders Nigeria and the world urgently need.
 
@@ -90,9 +94,9 @@ These are the leaders Nigeria and the world urgently need.
 
 The PTA meeting became a powerful moment of unity:
 
-- Parents saw the values being nurtured in their children  
-- Teachers guided and encouraged  
-- Students worked with joy and purpose  
+- Parents saw the values being nurtured in their children
+- Teachers guided and encouraged
+- Students worked with joy and purpose
 
 This is the **Dansol family** — a community committed to raising children who excel in academics and character.
 
@@ -100,11 +104,12 @@ This is the **Dansol family** — a community committed to raising children who 
 
 ## Image Gallery
 
-![Gallery 1](/blog/dansol-carwash.jpg)
-![Gallery 2](/blog/dansol3.jpg)
+![Gallery 1](/blog/dansol-carwash.jpg)  
+![Gallery 2](/blog/dansol3.jpg)  
 ![Gallery 3](/blog/dansol4.jpg)
 
 ---
+
 <div class="mt-16 text-center">
   <ins class="adsbygoogle"
        style="display:block"
