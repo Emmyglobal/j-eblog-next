@@ -6,8 +6,6 @@ slug: "dansol-charity-car-wash"
 image: "/blog/dansol-carwash.jpg"
 ---
 
-<section class="prose prose-lg md:prose-xl max-w-none text-gray-800 leading-relaxed">
-
 ##  Raising Godly Leaders Through Service  
 ### Dansol Students Organize Charity Car-Wash Fundraiser
 
@@ -136,4 +134,3 @@ This is the **Dansol family** — a community committed to raising children who 
 
 <div id="comments-section"></div>
 
-</section>
