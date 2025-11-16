@@ -295,87 +295,97 @@ export default function Home({ posts }) {
         </div>
       </section>
 
-      {/* BLOG SECTION (uses posts from content/posts via getStaticProps) */}
-      <section id="blog" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="mt-16">
-            {/* AdSense unit preserved */}
-            <ins className="adsbygoogle" style={{display:"block"}} data-ad-client="ca-pub-8061135224509487" data-ad-slot="3364563697" data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script dangerouslySetInnerHTML={{ __html: `(adsbygoogle = window.adsbygoogle || []).push({});` }} />
-          </div>
 
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
-            <div>
-              <span className="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-600 font-medium mb-4">Latest Articles</span>
-              <h2 className="heading-font text-3xl md:text-4xl font-bold mb-2">From Our Blog</h2>
-              <p className="text-gray-600">Weekly insights on topics that matter</p>
-            </div>
-            <Link href="/blog" className="mt-4 md:mt-0 px-6 py-3 rounded-full border border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white font-medium transition">View All Articles <i className="fas fa-arrow-right ml-2"></i></Link>
-          </div>
+{/* BLOG SECTION */}
+<section id="blog" className="py-16 bg-white">
+  <div className="container mx-auto px-4">
+    
+    {/* AdSense */}
+    <div className="mt-16">
+      <ins className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-client="ca-pub-8061135224509487"
+        data-ad-slot="3364563697"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script dangerouslySetInnerHTML={{ __html: `(adsbygoogle = window.adsbygoogle || []).push({});` }} />
+    </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Example: large curated cards from your index.html */}
-            <article className="bg-emerald-50 py-10 px-6">
-              <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="/images/nn.jpg" alt="Nigeria Debt Panel" className="w-full h-64 object-cover" />
-                <div className="p-6">
-                  <h2 className="text-2xl font-bold text-emerald-700 mb-2">Nigeria Now Spends Half Its Revenue on Debt—Presidential Panel</h2>
-                  <p className="text-gray-700 mb-4">A recent report by the Presidential Fiscal Policy and Tax Reforms Committee reveals that over 50% of Nigeria’s government revenue is now directed towards debt servicing...</p>
-                  <a href="/blog/politics/nigeria-revenue-debt-2025.html" className="inline-block text-emerald-600 font-semibold hover:underline">Read More →</a>
-                </div>
-              </div>
-            </article>
+    {/* Heading */}
+    <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+      <div>
+        <span className="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-600 font-medium mb-4">
+          Latest Articles
+        </span>
+        <h2 className="heading-font text-3xl md:text-4xl font-bold mb-2">
+          From Our Blog
+        </h2>
+        <p className="text-gray-600">Weekly insights on topics that matter</p>
+      </div>
+      <Link href="/blog" className="mt-4 md:mt-0 px-6 py-3 rounded-full border border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white font-medium transition">
+        View All Articles <i className="fas fa-arrow-right ml-2"></i>
+      </Link>
+    </div>
 
-            <article className="max-w-5xl mx-auto px-4 py-12">
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="/images/atiku.jpg" alt="Atiku and Obi" className="w-full h-64 object-cover" />
-                <div className="p-6">
-                  <h2 className="text-2xl font-bold text-gray-800 mb-4">Atiku vs Peter Obi: Top Analyst Predicts Who Will Secure ADC’s Presidential Ticket Ahead of 2027</h2>
-                  <p className="text-gray-600 mb-4">As Nigeria’s 2027 presidential election draws closer, political analysts are watching closely ...</p>
-                  <a href="/blog/politics/atiku-vs-obi-2027.html" className="inline-block px-6 py-2 bg-emerald-600 text-white font-medium rounded hover:bg-emerald-700 transition">Read More</a>
-                </div>
-              </div>
-            </article>
+    {/* Featured (Dansol posts first) */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            {/* More cards below... (you can add more posts via content/posts .md) */}
-            {posts && posts.slice(0, 6).map((p) => (
-              <article key={p.slug} className="bg-white rounded-lg shadow hover:shadow-md transition-all overflow-hidden">
-                <img src={p.image || "/images/default-card.jpg"} alt={p.title} className="w-full h-48 object-cover" />
-                <div className="p-4">
-                  <h3 className="text-xl font-semibold text-emerald-700">{p.title}</h3>
-                  <p className="text-gray-500 text-sm mt-1">{new Date(p.date).toDateString()} • {p.category}</p>
-                  <p className="mt-2 text-gray-700 text-sm line-clamp-3">{p.description || ""}</p>
-                  <a href={`/posts/${p.slug}`} className="inline-block mt-4 text-emerald-600 font-medium hover:underline">Read More →</a>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          {/* persistent ad units from original */}
-          <div className="mt-16">
-            <ins className="adsbygoogle" style={{display:"block"}} data-ad-client="ca-pub-8061135224509487" data-ad-slot="5161174753" data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script dangerouslySetInnerHTML={{ __html: `(adsbygoogle = window.adsbygoogle || []).push({});` }} />
-          </div>
+      {/* FEATURED 1 – Why We Believe in Academic Excellence */}
+      <article className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+        <img src="/blog/dansol4.jpg" alt="Academic Excellence" 
+        className="w-full h-56 object-cover" />
+        <div className="p-6">
+          <h3 className="text-2xl font-semibold text-emerald-700 mb-2">
+            Why We Believe in Academic Excellence & Godly Values
+          </h3>
+          <p className="text-gray-600 mb-3">
+            A powerful reflection on the mission and values shaping students at Dansol Schools...
+          </p>
+          <Link href="/posts/why-we-believe-in-academic-excellence-and-godly-values" 
+            className="text-emerald-600 font-semibold hover:underline">
+            Read More →
+          </Link>
         </div>
-      </section>
+      </article>
 
-      {/* NEWS & EXTRA CARDS (some highlighted sections from your HTML) */}
-      <section className="py-12 bg-emerald-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-emerald-700 mb-8">Latest News</h2>
-
-          <div className="grid gap-8">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src="/images/kanu.jpg" alt="Nnamdi Kanu" className="w-full h-64 object-cover" />
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold text-emerald-800 mb-2">Reject Nnamdi Kanu’s No-Case Submission, FG Tells Court</h3>
-                <p className="text-gray-700 mb-4">The Federal Government urged the court to dismiss the no-case submission filed by IPOB leader Nnamdi Kanu...</p>
-                <a href="/blog/politics/reject-kanu-no-case.html" className="text-emerald-700 font-medium hover:underline inline-flex items-center">Read More →</a>
-              </div>
-            </div>
-          </div>
+      {/* FEATURED 2 – Charity Car Wash Outreach */}
+      <article className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+        <img src="/blog/charity1.jpg" alt="Dansol Charity Outreach"
+        className="w-full h-56 object-cover" />
+        <div className="p-6">
+          <h3 className="text-2xl font-semibold text-emerald-700 mb-2">
+            Dansol Students Engage in Charity Through Car Wash Outreach
+          </h3>
+          <p className="text-gray-600 mb-3">
+            Teaching young learners compassion, service, and godly values through practical charity...
+          </p>
+          <Link href="/posts/dansol-charity-car-wash-outreach"
+            className="text-emerald-600 font-semibold hover:underline">
+            Read More →
+          </Link>
         </div>
-      </section>
+      </article>
+
+      {/* Dynamic Posts */}
+      {posts && posts.slice(0, 6).map((p) => (
+        <article key={p.slug} className="bg-white rounded-lg shadow hover:shadow-md transition-all overflow-hidden">
+          <img src={p.image || "/images/default-card.jpg"} alt={p.title} className="w-full h-48 object-cover" />
+          <div className="p-4">
+            <h3 className="text-xl font-semibold text-emerald-700">{p.title}</h3>
+            <p className="text-gray-500 text-sm mt-1">
+              {new Date(p.date).toDateString()} • {p.category}
+            </p>
+            <p className="mt-2 text-gray-700 text-sm line-clamp-3">{p.description || ""}</p>
+            <a href={`/posts/${p.slug}`} className="inline-block mt-4 text-emerald-600 font-medium hover:underline">
+              Read More →
+            </a>
+          </div>
+        </article>
+      ))}
+
+    </div>
+  </div>
+</section>
 
 {/* NEWSLETTER */}
 <section className="py-16 bg-gray-900 text-white">
