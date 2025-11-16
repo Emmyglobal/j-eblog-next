@@ -59,7 +59,11 @@ export default function BlogPost({ frontmatter, content, slug }) {
       )}
 
       {/* Markdown Content */}
-      <ReactMarkdown>{content}</ReactMarkdown>
+      <ReactMarkdown 
+	  rehypePlugins={[require("rehype-raw"), require("rehype-sanitize")]}
+	  >
+	  {content}
+	  </ReactMarkdown>
 
       {/* Google AdSense */}
       <div className="mt-16 text-center">

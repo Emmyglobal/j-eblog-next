@@ -19,7 +19,7 @@ It was more than an activity — it was a demonstration of **faith in action**, 
 
 ## A Living Expression of Dansol’s Mission & Vision
 
-![Dansol Charity Event](/blog/dansol4.jpg)
+![Dansol Charity Event](/blog/dansol3.jpg)
 
 Dansol’s vision of *“raising children who will be godly leaders and role models in society”* came alive in this simple but powerful act of service.
 
@@ -69,12 +69,22 @@ These qualities form the foundation of wholesome, godly leaders.
 
 You can watch the full video below:
 
-<div class="my-8">
-  <iframe width="100%" height="400" src="https://www.youtube.com/watch?v=wzPSdbGdS6A&t=54s" title="Dansol Charity Car Wash" frameborder="0" allowfullscreen></iframe>
+## Video Highlight From the Charity Event
+
+<div style="margin: 30px 0;">
+  <iframe 
+    width="100%" 
+    height="400" 
+    src="https://www.youtube.com/watch?v=wzPSdbGdS6A&t=54s" 
+    title="Dansol Charity Car Wash" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
 </div>
 
 👉 **Watch directly on YouTube:**  
-https://www.youtube.com/watch?v=wzPSdbGdS6A&t=54s
+[click here to watch the video](https://www.youtube.com/watch?v=wzPSdbGdS6A&t=54s)
 ---
 
 ## Building a Future Generation of Godly Leaders
@@ -107,9 +117,9 @@ This is the **Dansol family** — a community committed to raising children who 
 
 ## Image Gallery
 
-![Gallery 1](/blog/dansol-carwash..jpg)
+![Gallery 1](/blog/dansol-carwash.jpg)
 ![Gallery 2](/blog/dansol3.jpg)
-![Gallery 3](/blog/dansol1.jpg)
+![Gallery 3](/blog/dansol4.jpg)
 
 ---
 <div class="mt-16 text-center">
