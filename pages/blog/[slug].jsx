@@ -59,7 +59,6 @@ export default function BlogPost({ frontmatter, content, slug }) {
       )}
 
       <ReactMarkdown
-	 children={markdownContent}
        	 rehypePlugins={[rehypeRaw]}
          remarkPlugins={[remarkGfm]}
       >
