@@ -57,9 +57,13 @@ export default function BlogPost({ frontmatter, content, slug }) {
         />
       )}
 
-      <ReactMarkdown rehypePlugins={[rehypeRaw]}>
-        {content}
-      </ReactMarkdown>
+      <ReactMarkdown 
+       rehypePlugins={[rehypeRaw]}
+       remarkPlugins={[remarkGfm]}
+      >
+       {content}
+     </ReactMarkdown>
+
 
       <div className="mt-16 text-center">
         <ins
