@@ -46,7 +46,7 @@ These are qualities that academic work alone cannot teach — but service instil
 
 ---
 
-## ✝️ Godly Values at the Heart of Education
+## Godly Values at the Heart of Education
 
 Dansol continues to prove that **faith and excellence are not rivals** — they are partners.
 
@@ -70,12 +70,11 @@ These qualities form the foundation of wholesome, godly leaders.
 You can watch the full video below:
 
 <div class="my-8">
-  <iframe width="100%" height="400" src="https://youtu.be/wzPSdbGdS6A?si=Q1UcKxXwQBZGjp1h" title="Dansol Charity Car Wash" frameborder="0" allowfullscreen></iframe>
+  <iframe width="100%" height="400" src="https://www.youtube.com/watch?v=wzPSdbGdS6A&t=54s" title="Dansol Charity Car Wash" frameborder="0" allowfullscreen></iframe>
 </div>
 
 👉 **Watch directly on YouTube:**  
-https://youtu.be/wzPSdbGdS6A?si=Q1UcKxXwQBZGjp1h
-
+https://www.youtube.com/watch?v=wzPSdbGdS6A&t=54s
 ---
 
 ## Building a Future Generation of Godly Leaders
@@ -108,14 +107,11 @@ This is the **Dansol family** — a community committed to raising children who 
 
 ## Image Gallery
 
-![Gallery 1](/blog/dansol1.jpg)
+![Gallery 1](/blog/dansol-carwash..jpg)
 ![Gallery 2](/blog/dansol3.jpg)
-![Gallery 3](/blog/dansol4.jpg)
+![Gallery 3](/blog/dansol1.jpg)
 
 ---
-
-## 📢 Google AdSense
-
 <div class="mt-16 text-center">
   <ins class="adsbygoogle"
        style="display:block"
