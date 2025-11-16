@@ -309,7 +309,57 @@ export default function Home({ posts }) {
         data-ad-format="auto"
         data-full-width-responsive="true"></ins>
       <script dangerouslySetInnerHTML={{ __html: `(adsbygoogle = window.adsbygoogle || []).push({});` }} />
-    </div>
+    </div"use client";
+import React, { useEffect } from "react";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import CommentSection from "../../components/CommentSection";
+
+export async function getStaticPaths() {
+  const files = fs.readdirSync(path.join("content"));
+  const paths = files
+    .filter((filename) => filename.endsWith(".md"))
+    .map((filename) => ({
+      params: { slug: filename.replace(".md", "") },
+    }));
+
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params: { slug } }) {
+  const markdownWithMeta = fs.readFileSync(
+    path.join("content", slug + ".md"),
+    "utf-8"
+  );
+
+  const { data: frontmatter, content } = matter(markdownWithMeta);
+
+  return { props: { frontmatter, slug, content } };
+}
+
+export default function BlogPost({ frontmatter, content, slug }) {
+  // Run AdSense after client-side hydration
+  useEffect(() => {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      console.error("AdSense error:", e);
+    }
+  }, []);
+
+  return (
+    <article className="prose prose-lg md:prose-xl mx-auto py-12 px-4 prose-img:rounded-xl prose-h2:text-emerald-700 prose-strong:text-emerald-700">
+      {/* Blog Title */}
+      <h1 className="text-4xl font-bold mb-4 text-emerald-700">
+        {frontmatter.title}
+      </h1>
+      <p className="text-gray-500 mb-8">
+        {frontmatter.date} • {frontmatter.author}
+      </p>>
+
 
     {/* Heading */}
     <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
@@ -332,7 +382,7 @@ export default function Home({ posts }) {
 
       {/* FEATURED 1 – Why We Believe in Academic Excellence */}
       <article className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-        <img src="/blog/dansol1.jpg" alt="Academic Excellence" 
+        <img src="/blog/dansol3.jpg" alt="Academic Excellence" 
         className="w-full h-56 object-cover" />
         <div className="p-6">
           <h3 className="text-2xl font-semibold text-emerald-700 mb-2">
@@ -369,7 +419,7 @@ export default function Home({ posts }) {
       {/* Dynamic Posts */}
       {posts && posts.slice(0, 6).map((p) => (
         <article key={p.slug} className="bg-white rounded-lg shadow hover:shadow-md transition-all overflow-hidden">
-          <img src={p.image || "/images/default-card.jpg"} alt={p.title} className="w-full h-48 object-cover" />
+          <img src={p.image || "/blog/dansol4.jpg"} alt={p.title} className="w-full h-48 object-cover" />
           <div className="p-4">
             <h3 className="text-xl font-semibold text-emerald-700">{p.title}</h3>
             <p className="text-gray-500 text-sm mt-1">
