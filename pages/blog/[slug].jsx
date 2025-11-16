@@ -62,6 +62,7 @@ export default function BlogPost({ frontmatter, content, slug }) {
       <ReactMarkdown
   rehypePlugins={[rehypeRaw]}
   remarkPlugins={[remarkGfm]}
+	  skipHtml={false}
   components={{
     a({ href, children }) {
       if (href.startsWith("https://www.youtube.com/embed/")) {
