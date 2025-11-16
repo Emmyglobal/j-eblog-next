@@ -54,27 +54,22 @@ export default function BlogPost({ frontmatter, content, slug }) {
           className="rounded-xl shadow-lg mb-8 w-full object-cover"
         />
       )}
+<ReactMarkdown
+  rehypePlugins={[rehypeRaw]}
+  remarkPlugins={[remarkGfm]}
+  skipHtml={false}
+  components={{
+    a({ href, children }) {
+      if (href.includes("youtube.com/embed")) {
+        return <VideoEmbed url={href} />;
+      }
+      return <a href={href}>{children}</a>;
+    },
+  }}
+>
+  {content}
+</ReactMarkdown>
 
-      <ReactMarkdown
-        rehypePlugins={[rehypeRaw]}
-        remarkPlugins={[remarkGfm]}
-        skipHtml={false}
-        components={{
-          iframe({ node, ...props }) {
-            return (
-              <div className="my-6 w-full aspect-video">
-                <iframe
-                  {...props}
-                  className="w-full h-full rounded-xl"
-                  allowFullScreen
-                />
-              </div>
-            );
-          }
-        }}
-      >
-        {content}
-      </ReactMarkdown>
 
       <CommentSection postId={slug} />
     </article>

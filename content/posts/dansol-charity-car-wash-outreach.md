@@ -66,16 +66,7 @@ These qualities form the foundation of wholesome, godly leaders.
 ## Video Highlight From the Charity Event
 
 You can watch the full video below:
-<iframe
-  width="100%"
-  height="400"
-  src="https://www.youtube.com/embed/wzPSdbGdS6A"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
-></iframe>
-👉 **Watch directly on YouTube:**  
+
 [youtube](https://www.youtube.com/embed/wzPSdbGdS6A)
 ---
 
