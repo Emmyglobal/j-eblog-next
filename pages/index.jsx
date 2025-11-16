@@ -296,10 +296,10 @@ export default function Home({ posts }) {
       </section>
 
 
-{/* BLOG SECTION */}
+	  {/* BLOG SECTION */}
 <section id="blog" className="py-16 bg-white">
   <div className="container mx-auto px-4">
-    
+
     {/* AdSense */}
     <div className="mt-16">
       <ins className="adsbygoogle"
@@ -309,57 +309,7 @@ export default function Home({ posts }) {
         data-ad-format="auto"
         data-full-width-responsive="true"></ins>
       <script dangerouslySetInnerHTML={{ __html: `(adsbygoogle = window.adsbygoogle || []).push({});` }} />
-    </div"use client";
-import React, { useEffect } from "react";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
-import CommentSection from "../../components/CommentSection";
-
-export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join("content"));
-  const paths = files
-    .filter((filename) => filename.endsWith(".md"))
-    .map((filename) => ({
-      params: { slug: filename.replace(".md", "") },
-    }));
-
-  return { paths, fallback: false };
-}
-
-export async function getStaticProps({ params: { slug } }) {
-  const markdownWithMeta = fs.readFileSync(
-    path.join("content", slug + ".md"),
-    "utf-8"
-  );
-
-  const { data: frontmatter, content } = matter(markdownWithMeta);
-
-  return { props: { frontmatter, slug, content } };
-}
-
-export default function BlogPost({ frontmatter, content, slug }) {
-  // Run AdSense after client-side hydration
-  useEffect(() => {
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (e) {
-      console.error("AdSense error:", e);
-    }
-  }, []);
-
-  return (
-    <article className="prose prose-lg md:prose-xl mx-auto py-12 px-4 prose-img:rounded-xl prose-h2:text-emerald-700 prose-strong:text-emerald-700">
-      {/* Blog Title */}
-      <h1 className="text-4xl font-bold mb-4 text-emerald-700">
-        {frontmatter.title}
-      </h1>
-      <p className="text-gray-500 mb-8">
-        {frontmatter.date} • {frontmatter.author}
-      </p>>
-
+    </div>
 
     {/* Heading */}
     <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
@@ -382,7 +332,7 @@ export default function BlogPost({ frontmatter, content, slug }) {
 
       {/* FEATURED 1 – Why We Believe in Academic Excellence */}
       <article className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-        <img src="/blog/dansol3.jpg" alt="Academic Excellence" 
+        <img src="/blog/dansol3.jpg" alt="Academic Excellence"
         className="w-full h-56 object-cover" />
         <div className="p-6">
           <h3 className="text-2xl font-semibold text-emerald-700 mb-2">
@@ -391,7 +341,7 @@ export default function BlogPost({ frontmatter, content, slug }) {
           <p className="text-gray-600 mb-3">
             A powerful reflection on the mission and values shaping students at Dansol Schools...
           </p>
-          <Link href="/posts/why-we-believe-in-academic-excellence-and-godly-values" 
+          <Link href="/posts/why-we-believe-in-academic-excellence-and-godly-values"
             className="text-emerald-600 font-semibold hover:underline">
             Read More →
           </Link>
@@ -467,7 +417,7 @@ export default function BlogPost({ frontmatter, content, slug }) {
             alert("❌ Something went wrong. Please try again later.");
           }
         }}
-        className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto"
+        className="flex flex-col sm:flex-row gap-4 w-xl mx-auto"
       >
         <input
           type="email"
