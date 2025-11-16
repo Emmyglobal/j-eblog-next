@@ -4,6 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
 import CommentSection from "../../components/CommentSection";
 
 export async function getStaticPaths() {
@@ -57,9 +58,10 @@ export default function BlogPost({ frontmatter, content, slug }) {
         />
       )}
 
-      <ReactMarkdown 
-       rehypePlugins={[rehypeRaw]}
-       remarkPlugins={[remarkGfm]}
+      <ReactMarkdown
+	 children={markdownContent}
+       	 rehypePlugins={[rehypeRaw]}
+         remarkPlugins={[remarkGfm]}
       >
        {content}
      </ReactMarkdown>
