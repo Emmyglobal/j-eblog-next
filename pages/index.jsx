@@ -160,7 +160,7 @@ export default function Home({ posts }) {
                     <span className="text-2xl font-bold text-gray-900">$99</span>
                     <span className="text-gray-500">/session</span>
                   </div>
-                  <a href="https://nwaforugochukwu.vercel.app/" className="px-4 py-2 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium transition flex items-center">
+                  <a href="/contact" className="px-4 py-2 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium transition flex items-center">
                     Book Now <i className="fas fa-arrow-right ml-2"></i>
                   </a>
                 </div>
