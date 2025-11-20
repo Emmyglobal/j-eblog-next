@@ -1,6 +1,6 @@
 ---
 title: "OAU Shines Again: Nigerian Students Win NCDMB National Essay Competition and Global IEEE SPS Scholarships"
-date: "2025-11-15"
+date: "2025-11-20"
 author: "Emmanuel Nwafor"
 slug: "oau-students-win-big-2025"
 image: "/blog/oau-celebration.jpg"
