@@ -22,8 +22,10 @@ const resources = [
     link: "https://www.researchgate.net/publication/1122334455_Stability_Analysis_of_Disease_Free_Equilibrium",
     pdf: "/pdfs/Stability_Analysis.pdf",
   },
+	{
     link: "/",                                  pdf: "/pdfs/TEST 4.pdf",
   },
+{
     link: "/",
     pdf: "/pdfs/WAEC 2025 QUESTIONS.pdf",
   },
